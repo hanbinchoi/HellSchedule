@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/gallery_open_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Gallery Open"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/read_bmi_image"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_below="@+id/gallery_open_button"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/OCRButtonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageContainer"
+        android:clickable="true"
+        android:onClick="processImage">
+
+        <Button
+            android:id="@+id/run_ocr_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Run OCR (Read Image text)"
+            android:textSize="18dp"
+            android:clickable="true"
+            android:onClick="processImage" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/OCRButtonContainer"
+        android:padding="10dp">
+
+        <TextView
+            android:fontFamily="@font/nanum_barun_pen_r"
+            android:id="@+id/OCRTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:hint="실행버튼을 누르시면 결과 출력됩니다."
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="center"/>
+    </RelativeLayout>
+</RelativeLayout>

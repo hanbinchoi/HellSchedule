@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gray_light"
+                android:fontFamily="@font/nanum_barun_pen_b"
+                android:padding="10dp"
+                android:text="● Measure BMI"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <include layout="@layout/bmi_height_weight" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/search_bmi_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Search BMI Image in Gallery" />
+
+            <TextView
+                android:fontFamily="@font/nanum_barun_pen_r"
+                android:id="@+id/OCR_ResultText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="갤러리에서 이미지를 가져와 BMI를 진단하려면 위 버튼을 클릭하세요!"
+                android:textSize="20dp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

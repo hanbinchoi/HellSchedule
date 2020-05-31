@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_menu1"
+        android:icon="@drawable/icon_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_menu2"
+        android:icon="@drawable/icon_storagebox"
+        android:title="Storage box" />
+
+    <item
+        android:id="@+id/navigation_menu3"
+        android:icon="@drawable/icon_calendar"
+        android:title="Calendar" />
+
+    <item
+        android:id="@+id/navigation_menu4"
+        android:icon="@drawable/icon_shop"
+        android:title="Shop" />
+</menu>
