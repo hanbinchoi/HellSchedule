@@ -1,5 +1,6 @@
 package hellschedule.hellschedule;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -27,15 +28,14 @@ import android.view.Menu;
 
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_HomeFragment;
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_ShopFragment;
-import hellschedule.hellschedule.ui.bottom_fragment.Bottom_StorageFragment;
+import hellschedule.hellschedule.ui.bottom_fragment.Bottom_StopWatchFragment;
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_YoutubeFragment;
 
-import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_home;
-import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_gallery;
-import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_send;
-import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_share;
+import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_manual;
+import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_policy;
+import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_developer;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_slideshow;
-import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_tools;
+import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_github;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,15 +46,14 @@ public class MainActivity extends AppCompatActivity {
     // 4개의 메뉴에 들어갈 Fragment들을 가져와 변수로 선언
     private Bottom_HomeFragment bottom_home_fragment = new Bottom_HomeFragment();
     private Bottom_ShopFragment bottom_shop_fragment = new Bottom_ShopFragment();
-    private Bottom_StorageFragment bottom_storage_fragment = new Bottom_StorageFragment();
+    private Bottom_StopWatchFragment bottom_stopWatchFragment = new Bottom_StopWatchFragment();
     private Bottom_YoutubeFragment bottom_youtube_fragment = new Bottom_YoutubeFragment();
 
-    private nav_fragment_home nav_fragment_home = new nav_fragment_home();
-    private nav_fragment_gallery nav_fragment_gallery = new nav_fragment_gallery();
-    private nav_fragment_send nav_fragment_send = new nav_fragment_send();
-    private nav_fragment_share nav_fragment_share = new nav_fragment_share();
+    private nav_fragment_manual nav_fragment_manual = new nav_fragment_manual();
+    private nav_fragment_policy nav_fragment_policy = new nav_fragment_policy();
+    private nav_fragment_developer nav_fragment_developer = new nav_fragment_developer();
     private nav_fragment_slideshow nav_fragment_slideshow = new nav_fragment_slideshow();
-    private nav_fragment_tools nav_fragment_tools = new nav_fragment_tools();
+    private nav_fragment_github nav_fragment_github = new nav_fragment_github();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,8 +71,8 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow,
-                R.id.nav_tools, R.id.nav_share, R.id.nav_send,R.id.nav_start)
+                R.id.nav_manual, R.id.nav_policy, R.id.nav_slideshow,
+                R.id.nav_github, R.id.nav_developer, R.id.nav_email,R.id.nav_start)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
@@ -84,36 +83,40 @@ public class MainActivity extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         NavigationView LeftNavigationView = findViewById(R.id.nav_view);
 
-        //FragmentTransaction transaction2 = fragmentManager.beginTransaction();
-        //transaction2.replace(R.id.nav_host_fragment, nav_fragment_home).commitAllowingStateLoss();
 
         LeftNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 FragmentTransaction transaction = fragmentManager.beginTransaction();
                 switch (menuItem.getItemId()) {
-                    case R.id.nav_home: {
-                        transaction.replace(R.id.nav_host_fragment, nav_fragment_home).commitAllowingStateLoss();
+                    case R.id.nav_manual: {
+                        transaction.replace(R.id.nav_host_fragment, nav_fragment_manual).commitAllowingStateLoss();
                         break;
                     }
-                    case R.id.nav_gallery: {
-                        transaction.replace(R.id.nav_host_fragment, nav_fragment_gallery).commitAllowingStateLoss();
+                    case R.id.nav_policy: {
+                        transaction.replace(R.id.nav_host_fragment, nav_fragment_policy).commitAllowingStateLoss();
                         break;
                     }
-                    case R.id.nav_send: {
-                        transaction.replace(R.id.nav_host_fragment, nav_fragment_send).commitAllowingStateLoss();
+                    case R.id.nav_email: {
+                        Intent email = new Intent(Intent.ACTION_SEND);
+                        email.setType("plain/text");
+                        String[] address = {"email@address.com"};
+                        email.putExtra(Intent.EXTRA_EMAIL, address);
+                        email.putExtra(Intent.EXTRA_SUBJECT, "GachonSoftware@gachon.ac.kr");
+                        email.putExtra(Intent.EXTRA_TEXT, "안녕하세요. 소프트웨어학과 15학번 강호동입니다. (내용 미리적을 수 있음)");
+                        startActivity(email);
                         break;
                     }
-                    case R.id.nav_share: {
-                        transaction.replace(R.id.nav_host_fragment, nav_fragment_share).commitAllowingStateLoss();
+                    case R.id.nav_developer: {
+                        transaction.replace(R.id.nav_host_fragment, nav_fragment_developer).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.nav_slideshow: {
                         transaction.replace(R.id.nav_host_fragment, nav_fragment_slideshow).commitAllowingStateLoss();
                         break;
                     }
-                    case R.id.nav_tools: {
-                        transaction.replace(R.id.nav_host_fragment, nav_fragment_tools).commitAllowingStateLoss();
+                    case R.id.nav_github: {
+                        transaction.replace(R.id.nav_host_fragment, nav_fragment_github).commitAllowingStateLoss();
                         break;
                     }
                 }
@@ -135,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.navigation_menu2: {
-                        transaction.replace(R.id.nav_host_fragment, bottom_storage_fragment).commitAllowingStateLoss();
+                        transaction.replace(R.id.nav_host_fragment, bottom_stopWatchFragment).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.navigation_menu3: {

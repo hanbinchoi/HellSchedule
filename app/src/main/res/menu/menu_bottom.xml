@@ -8,8 +8,8 @@
 
     <item
         android:id="@+id/navigation_menu2"
-        android:icon="@drawable/icon_storagebox"
-        android:title="Storage box" />
+        android:icon="@drawable/icon_stopwatch"
+        android:title="Stop Watch" />
 
     <item
         android:id="@+id/navigation_menu3"

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.Activity.YouTubeActivity">
+
+    <com.google.android.youtube.player.YouTubePlayerView
+        android:id="@+id/youtubeView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/youtube_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="버튼을 누르시면 비디오가 재생됩니다." />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/youtuber1"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <ImageView
+                android:src="@drawable/youtuber3"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <ImageView
+                android:src="@drawable/youtuber4"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <ImageView
+                android:src="@drawable/youtuber6"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <ImageView
+                android:src="@drawable/youtuber5"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+            <ImageView
+                android:src="@drawable/youtuber2"
+                android:scaleType="fitXY"
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

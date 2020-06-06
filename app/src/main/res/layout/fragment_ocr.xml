@@ -46,6 +46,15 @@
                 android:hint="갤러리에서 이미지를 가져와 BMI를 진단하려면 위 버튼을 클릭하세요!"
                 android:textSize="20dp"
                 android:textColor="@color/black" />
+            <TextView
+                android:fontFamily="@font/nanum_barun_pen_r"
+                android:id="@+id/bmi_ocr_result"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:hint="이곳에 BMI 측정 결과가 표시됩니다."
+                android:textSize="20dp"
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>

@@ -45,8 +45,8 @@ public class OCR_Fragment extends Fragment {
                 } else { //둘 다 공백이 아닐때
                     String s1 = bmi_height.getText().toString();//1번 키 값 가져오기(xml->java)
                     String s2 = bmi_weight.getText().toString();//2번 몸무게 값 가져오기(xml->java)
-                    double result =  Double.parseDouble(s2) / Math.pow(Double.parseDouble(s1)/100,2);
-                    result = Math.round(result*100)/100.0;
+                    double result =  Double.parseDouble(s2) / Math.pow(Double.parseDouble(s1)/100,2); //BMI result : 몸무게 / ( 키(m)**2 )
+                    result = Math.round(result*100)/100.0; // Math의 round메소드로 소숫점 두 번째 자리 표현
 
                     if (result>=0 && result<18.5) {
                         bmi_result.setText(result +" 당신은 저체중 입니다.");
@@ -74,6 +74,7 @@ public class OCR_Fragment extends Fragment {
         Search_BMI_Image.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
+                //Search_BMI_Image 버튼을 클릭하면 OCR Activity로 화면전환이 된다.
                 Intent intent = new Intent(getActivity() .getApplicationContext(), OCRActivity.class);
                 startActivityForResult(intent,1);//보내고 난후의 인텐트에서 끝난 이벤트를 받는것
             }
@@ -87,11 +88,32 @@ public class OCR_Fragment extends Fragment {
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         TextView OCR_Text;
-        //Intent intent2 = getIntent();
+        TextView OCR_BMI_Result;
+
+        //OCR Activity에서 String, Double로 BMI값을 받아줌.
         String BMI = data.getExtras().getString("BMI");
+        Double BMI2 = Double.parseDouble(BMI);//String으로 받은 BMI값을 Dobule로 변경
 
         OCR_Text = (TextView) v.findViewById(R.id.OCR_ResultText);
         OCR_Text.setText("BMI 측정 결과 : " + BMI);
+
+        //OCR 실행 결과 식별 된 BMI 값을 통해 현재 체중 상태를 나눠준다.
+        OCR_BMI_Result = (TextView) v.findViewById(R.id.bmi_ocr_result);
+        if (BMI2>=0 && BMI2<18.5) {
+            OCR_BMI_Result.setText(" 당신은 저체중 입니다.");
+        }
+        else if (BMI2>=18.5 && BMI2<23){
+            OCR_BMI_Result.setText(" 당신은 정상체중 입니다.");
+        }
+        else if (BMI2>=23 && BMI2<25){
+            OCR_BMI_Result.setText(" 당신은 과체중 입니다.");
+        }
+        else if (BMI2>=25 && BMI2<30){
+            OCR_BMI_Result.setText(" 당신은 비만 입니다.");
+        }
+        else{
+            OCR_BMI_Result.setText(" 당신은 고도비만 입니다.");
+        }
     }
     //endregion
 

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/recycler_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/card_view_trail_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cardview_image"
+            android:scaleType="fitXY"/>
+        <ImageView
+            android:id="@+id/card_view_trail_course"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/cardview_image"
+            android:scaleType="fitXY"/>
+
+        <TextView
+            android:id="@+id/card_view_trail_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|start"
+            android:text="이름"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanum_barun_pen_b"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/card_view_trail_region"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:gravity="center_vertical|start"
+            android:text="지역"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanum_barun_pen_b"
+            android:background="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/card_view_trail_distance"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical|start"
+            android:text="거리"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:fontFamily="@font/nanum_barun_pen_b"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

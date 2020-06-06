@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    app:cardElevation="8dp">
+
+    <LinearLayout
+        android:id="@+id/recycler_view_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/card_view_exercise_image"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/cardview_image" />
+
+        <TextView
+            android:id="@+id/card_view_exercise_partial"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="부위"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/card_view_exercise_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical|start"
+                android:text="운동명칭"
+                android:textAllCaps="true"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/card_view_exercise_set"
+                    android:layout_width="70dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="Set"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/card_view_exercise_youtube_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical|start"
+                    android:text="youtubeText"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/card_view_exercise_youtube"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:src="@drawable/cardview_youtube" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

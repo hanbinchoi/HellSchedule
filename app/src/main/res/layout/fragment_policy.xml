@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy_title"
+        android:textSize="30dp"
+        android:gravity="center|center_vertical"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy1"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy1_text"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy2"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy2_text1"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy2_text2"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy2_text3"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy2_text4"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy3"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy3_text"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy4"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy4_text"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/policy5_text"
+        android:textSize="15dp"
+        android:textColor="@color/gray"
+        android:fontFamily="@font/nanum_barun_pen_b" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/hellschedule_logo1"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"/>
+</LinearLayout>
+</ScrollView>

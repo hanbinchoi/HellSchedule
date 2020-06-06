@@ -102,8 +102,7 @@ public class OCRActivity extends AppCompatActivity {
         //region BMI string처리
        String OCRresultSample = OCRresult;
         int tot = OCRresultSample.indexOf("B M");
-        String BMI = OCRresultSample.substring(tot+33,tot+38);
-
+        String BMI = OCRresultSample.substring(tot+34,tot+38);
         //endregion
 
         //region intent작업 및 setText로 OCRTextView에 값 넣어주기!

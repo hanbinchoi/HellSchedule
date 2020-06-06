@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageButton
+            android:background="@drawable/round_imagebutton"
+            android:adjustViewBounds="true"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@+id/btn60"
+            android:id="@+id/btn30"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/timer30"
+            android:scaleType="fitXY" />
+        <ImageButton
+            android:background="@drawable/round_imagebutton"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/timer60"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btn60"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_toRightOf="@id/btn60"
+            android:id="@+id/btn120"
+            android:src="@drawable/timer120"
+            android:layout_marginLeft="40dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:background="@drawable/round_imagebutton"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/timer60"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:scaleType="fitXY"/>
+</LinearLayout>

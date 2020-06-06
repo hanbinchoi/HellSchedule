@@ -12,16 +12,16 @@
         tools:layout="@layout/fragment_start" />
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_home"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_manual"
+        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_manual"
+        android:label="@string/menu_manual"
+        tools:layout="@layout/fragment_manual" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_gallery"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
+        android:id="@+id/nav_policy"
+        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_policy"
+        android:label="@string/menu_policy"
+        tools:layout="@layout/fragment_policy" />
 
     <fragment
         android:id="@+id/nav_slideshow"
@@ -30,20 +30,15 @@
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_tools"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
+        android:id="@+id/nav_github"
+        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_github"
+        android:label="@string/menu_github"
+        tools:layout="@layout/fragment_github" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_share"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
+        android:id="@+id/nav_developer"
+        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_developer"
+        android:label="@string/menu_developer"
+        tools:layout="@layout/fragment_developer" />
 
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_send"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
 </navigation>
