@@ -28,10 +28,6 @@
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
         </activity>
-        <activity android:name=".ui.Activity.RoutineActivity"/>
-        <activity android:name=".ui.Activity.OCRActivity"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ui.Activity.YouTubeActivity" />
     </application>
 

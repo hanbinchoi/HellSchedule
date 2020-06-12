@@ -14,9 +14,8 @@ import com.makeramen.roundedimageview.RoundedImageView;
 
 import hellschedule.hellschedule.MainActivity;
 import hellschedule.hellschedule.R;
-import hellschedule.hellschedule.ui.Activity.RoutineActivity;
 import hellschedule.hellschedule.ui.fragment.Diet_Fragment;
-import hellschedule.hellschedule.ui.fragment.OCR_Fragment;
+import hellschedule.hellschedule.ui.fragment.BMI_Fragment;
 import hellschedule.hellschedule.ui.fragment.Routine_Fragment;
 import hellschedule.hellschedule.ui.fragment.Trail_Fragment;
 
@@ -44,7 +43,7 @@ public class Bottom_HomeFragment extends Fragment {
         main_menu_button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ((MainActivity) getActivity()).replaceFragment(OCR_Fragment.newInstance());
+                ((MainActivity) getActivity()).replaceFragment(BMI_Fragment.newInstance());
             }
         });
         main_menu_button3.setOnClickListener(new View.OnClickListener() {

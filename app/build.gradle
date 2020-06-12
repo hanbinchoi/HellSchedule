@@ -53,4 +53,7 @@ dependencies {
     implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:+'
     implementation files('libs\\YouTubeAndroidPlayerApi.jar')
 
+    //mancj Git 사용(SearchBar)
+    implementation 'com.github.mancj:MaterialSearchBar:0.8.2'
+
 }

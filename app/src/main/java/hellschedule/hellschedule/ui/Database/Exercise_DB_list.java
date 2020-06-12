@@ -30,6 +30,7 @@ public class Exercise_DB_list {
     }
     public void setExercise_set(String Exercise_set){ this.Exercise_set = Exercise_set; }
     public Bitmap getExercise_image(){return Exercise_image;}
+
     public void setExercise_image(byte[] Exercise_image){
         byte[] image = Exercise_image;
         Bitmap bm = BitmapFactory.decodeByteArray(image,0,image.length);

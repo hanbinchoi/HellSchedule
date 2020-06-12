@@ -29,7 +29,7 @@ import android.view.Menu;
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_HomeFragment;
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_ShopFragment;
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_StopWatchFragment;
-import hellschedule.hellschedule.ui.bottom_fragment.Bottom_YoutubeFragment;
+import hellschedule.hellschedule.ui.bottom_fragment.Bottom_SearchFragment;
 
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_manual;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_policy;
@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
     private Bottom_HomeFragment bottom_home_fragment = new Bottom_HomeFragment();
     private Bottom_ShopFragment bottom_shop_fragment = new Bottom_ShopFragment();
     private Bottom_StopWatchFragment bottom_stopWatchFragment = new Bottom_StopWatchFragment();
-    private Bottom_YoutubeFragment bottom_youtube_fragment = new Bottom_YoutubeFragment();
+    private Bottom_SearchFragment bottom_youtube_fragment = new Bottom_SearchFragment();
 
     private nav_fragment_manual nav_fragment_manual = new nav_fragment_manual();
     private nav_fragment_policy nav_fragment_policy = new nav_fragment_policy();

@@ -4,6 +4,11 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
+        android:font="@font/hanna"/>
+
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
         android:font="@font/nanum_gothic_bold"/>
     <font
         android:fontStyle="normal"
