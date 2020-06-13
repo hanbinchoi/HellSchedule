@@ -1,11 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <TextView
+
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Diet Fragment"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gray_light"
+                android:fontFamily="@font/nanum_barun_pen_b"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="@string/diet_management1"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/diet_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dietbutton_1"
+                    app:riv_corner_radius="10dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    android:layout_marginLeft="10dp" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/diet_button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dietbutton_2"
+                    app:riv_corner_radius="10dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/diet_button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dietbutton_3"
+                    app:riv_corner_radius="10dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    android:layout_marginLeft="10dp"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/diet_button4"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dietbutton_4"
+                    app:riv_corner_radius="10dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    android:layout_marginRight="10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/diet_button5"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dietbutton_5"
+                    app:riv_corner_radius="10dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    android:layout_marginLeft="10dp"/>
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/diet_button6"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:padding="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dietbutton_6"
+                    app:riv_corner_radius="10dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    android:layout_marginRight="10dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/gray_light"
+                android:fontFamily="@font/nanum_barun_pen_b"
+                android:padding="10dp"
+                android:gravity="center"
+                android:text="@string/diet_management2"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"/>
+            <ImageView
+                android:id="@+id/diet_change_imageview"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"/>
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
