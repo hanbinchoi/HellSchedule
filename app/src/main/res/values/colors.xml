@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary">#ff0000</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
 
@@ -9,7 +9,7 @@
     <color name="gray_light">#D2D6D7</color>
     <color name="gray">#777A88</color>
     <color name="gray_dark">#464653</color>
-    <color name="red">#ff0000</color>
+    <color name="toolbar_color">#54546c</color>
 
     <color name="appbar_main">#DF0D1E</color>
     <color name="appbar_main_above">#DF0D1E</color>
@@ -17,4 +17,10 @@
     <color name="backgroundColor2">#968D8D</color>
     <color name="framgBackgroundColor">#F6F7F9</color>
     <color name="bottom_nav_bg_color">#FFFFFF</color>
+
+    <color name="calorie_background">#FFF9EB</color>
+    <color name="calorie_total">#D36513</color>
+    <color name="calorie_total2">#F1761B</color>
+    <color name="calorie_main_back_button">#F4E79F</color>
+    <color name="calorie_calculate_button">#BEE6FF</color>
 </resources>

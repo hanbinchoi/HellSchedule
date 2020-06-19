@@ -34,7 +34,6 @@ import hellschedule.hellschedule.ui.bottom_fragment.Bottom_SearchFragment;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_manual;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_policy;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_developer;
-import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_slideshow;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_github;
 
 public class MainActivity extends AppCompatActivity {
@@ -52,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
     private nav_fragment_manual nav_fragment_manual = new nav_fragment_manual();
     private nav_fragment_policy nav_fragment_policy = new nav_fragment_policy();
     private nav_fragment_developer nav_fragment_developer = new nav_fragment_developer();
-    private nav_fragment_slideshow nav_fragment_slideshow = new nav_fragment_slideshow();
     private nav_fragment_github nav_fragment_github = new nav_fragment_github();
 
     @Override
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_manual, R.id.nav_policy, R.id.nav_slideshow,
+                R.id.nav_manual, R.id.nav_policy,
                 R.id.nav_github, R.id.nav_developer, R.id.nav_email,R.id.nav_start)
                 .setDrawerLayout(drawer)
                 .build();
@@ -109,10 +107,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.nav_developer: {
                         transaction.replace(R.id.nav_host_fragment, nav_fragment_developer).commitAllowingStateLoss();
-                        break;
-                    }
-                    case R.id.nav_slideshow: {
-                        transaction.replace(R.id.nav_host_fragment, nav_fragment_slideshow).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.nav_github: {

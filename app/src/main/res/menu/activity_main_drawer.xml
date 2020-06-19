@@ -14,10 +14,6 @@
             android:icon="@drawable/icon_policy"
             android:title="@string/menu_policy" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
-        <item
             android:id="@+id/nav_github"
             android:icon="@drawable/icon_github"
             android:title="@string/menu_github" />

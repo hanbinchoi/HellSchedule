@@ -29,6 +29,7 @@
 <!--            </intent-filter>-->
         </activity>
         <activity android:name=".ui.Activity.YouTubeActivity" />
+        <activity android:name=".ui.Activity.CalorieActivity"/>
     </application>
 
     <uses-permission android:name="android.permission.INTERNET"/>

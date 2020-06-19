@@ -25,7 +25,7 @@
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
-                android:background="@color/red"
+                android:background="@color/toolbar_color"
                 app:popupTheme="@style/AppTheme.PopupOverlay" >
                 <FrameLayout
                     android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="0dp"
-                android:background="@color/red"
+                android:background="@color/toolbar_color"
                 android:orientation="vertical">
 
                 <TextView
@@ -93,8 +93,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:background="@color/white"
-            app:itemIconTint="@color/red"
-            app:itemTextColor="@color/red"
+            app:itemIconTint="@color/toolbar_color"
+            app:itemTextColor="@color/toolbar_color"
             app:menu="@menu/menu_bottom" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
@@ -106,8 +106,8 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_main"
-        app:itemIconTint="@color/red"
-        app:itemTextColor="@color/red"
+        app:itemIconTint="@color/toolbar_color"
+        app:itemTextColor="@color/toolbar_color"
         app:menu="@menu/activity_main_drawer" />
 
 
