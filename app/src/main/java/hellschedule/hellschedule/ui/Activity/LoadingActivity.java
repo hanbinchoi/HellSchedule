@@ -28,7 +28,7 @@ public class LoadingActivity extends Activity {
         //startLoading함수 실행
         startLoading();
     }
-    //region //startLoading함수 선언 및 Intent로 스플레쉬스크린 실행 후 메인으로 넘어가게하기
+    //region //startLoading함수 선언 및 스플레쉬스크린 실행 후 Intent로 메인으로 넘어가게하기
     private void startLoading() {
         Handler handler = new Handler();
         handler.postDelayed(new Runnable() {

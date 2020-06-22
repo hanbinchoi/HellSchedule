@@ -26,7 +26,6 @@ public class Routine_Fragment_Slim extends Fragment {
     Database database;
     public static Context context_exercise;
 
-    public ImageButton Exercise_youtube;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -42,6 +41,7 @@ public class Routine_Fragment_Slim extends Fragment {
         //init DB
         database = new Database(getActivity().getApplicationContext());
 
+        //DB와 RecyclerViewAdapter 연결
         adapter = new RecyclerViewAdapter(getActivity().getApplicationContext(), database.get_Exercise_List1());
         recyclerView.setAdapter(adapter);
 

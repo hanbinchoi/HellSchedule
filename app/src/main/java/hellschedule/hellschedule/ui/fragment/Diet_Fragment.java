@@ -91,20 +91,19 @@ public class Diet_Fragment extends Fragment {
                     //남자 기초대사량 계산식
                     if(sex == 0)
                         totalKcal = (66.47 + (13.75*weight_kg) + (5*height_cm)-(6.76*(double)age));
-                        //여자 기초대사량 계산식
                     else
                         totalKcal = (655.1 + (9.56*weight_kg) + (1.85*height_cm)-(4.68*(double)age));
-                    //멸치면 벌크업(기초대사량 + 300kcal, 비율은 탄:단:지 4:4:2)
+                    //마른사람일 경우 벌크업(기초대사량 + 300kcal, 비율은 탄:단:지 4:4:2)
                     if((double)(weight_kg/((double)height_cm/100*(double)height_cm/100))<18.5){
                         totalKcal += 300;
                         ratio = "4:4:2";
                     }
-                    //돼지면 다이어트(기초대사량 - 500kcal, 비율은 탄:단:지 3:4:3)
+                    //비만일 경우 다이어트(기초대사량 - 500kcal, 비율은 탄:단:지 3:4:3)
                     else if((double)(weight_kg/((double)height_cm/100*(double)height_cm/100))>23){
                         totalKcal -= 500;
                         ratio = "3:4:3";
                     }
-                    //보통이면 린매스업(기초대사량 + 200kcal, 비율은 탄:단:지 5:3:2)
+                    //보통체형인 경우 린매스업(기초대사량 + 200kcal, 비율은 탄:단:지 5:3:2)
                     else{
                         totalKcal += 200;
                         ratio = "5:3:2";

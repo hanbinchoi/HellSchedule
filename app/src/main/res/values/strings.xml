@@ -61,4 +61,23 @@ Web을 이용한 서비스를 포함하고 있습니다.</string>
 
     <string name="diet_management1">원하시는 식단표를 눌러보세요!</string>
     <string name="diet_management2">버튼 클릭시 해당 식단표가 아래 출력됩니다.</string>
+
+    <string name="manual_title">매뉴얼</string>
+    <string name="manual1">1. 운동 루틴 추천</string>
+    <string name="manual2">2. BMI 측정</string>
+    <string name="manual3">3. 식단 관리</string>
+    <string name="manual4">4. 산책로 추천</string>
+    <string name="manual5">5. Stopwatch</string>
+    <string name="manual6">6. Search</string>
+    <string name="manual7">7. Shop</string>
+    <string name="manual1_text">목표하는 체형을 선택하여 운동 루틴 데이터 중 원하는 운동을
+선택하여 관련 영상 및 방법 권장 세트 등을 알 수 있다.</string>
+    <string name="manual2_text">정보 입력 후 버튼 클릭하면 자신의 bmi 를 알 수 있다.
+그렇게 구한 자신의 BMI에 따른 운동 루틴을 선택 가능하다.</string>
+    <string name="manual3_text">자신의 신체 정보 입력 후 버튼 클릭한다. 그 후 본인이 먹은 음식 칼로리/
+        수행한 운동 칼로리 검색이 가능하며 체형(BMI)별 하루 권장 칼로리 표시 기능이 추가되어있다.</string>
+    <string name="manual4_text">원하는 산책 테마 설정 이후 원하는 산책코스 선택이 가능하다.</string>
+    <string name="manual5_text">운동 세트 진행 후 휴식 시간 설정 기능이 있다.</string>
+    <string name="manual6_text">운동 루틴 DB에 있는 루틴 검색으로 원하는 운동을 바로 검색 할 수 있다.</string>
+    <string name="manual7_text">운동 용품 구매 사이트와 연동하여 자신이 구매하고자하는 운동 용품 및 보충제 등을 구매할 수 있다.</string>
 </resources>
