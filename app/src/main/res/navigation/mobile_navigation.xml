@@ -22,7 +22,11 @@
         android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_policy"
         android:label="@string/menu_policy"
         tools:layout="@layout/fragment_policy" />
-
+    <fragment
+        android:id="@+id/nav_help"
+        android:name="hellschedule.hellschedule.ui.nav_fragment.nav_fragment_help"
+        android:label="@string/menu_help"
+        tools:layout="@layout/fragment_help" />
 
     <fragment
         android:id="@+id/nav_github"

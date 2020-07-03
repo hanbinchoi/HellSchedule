@@ -31,6 +31,7 @@ import hellschedule.hellschedule.ui.bottom_fragment.Bottom_ShopFragment;
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_StopWatchFragment;
 import hellschedule.hellschedule.ui.bottom_fragment.Bottom_SearchFragment;
 
+import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_help;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_manual;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_policy;
 import hellschedule.hellschedule.ui.nav_fragment.nav_fragment_developer;
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
     private nav_fragment_policy nav_fragment_policy = new nav_fragment_policy();
     private nav_fragment_developer nav_fragment_developer = new nav_fragment_developer();
     private nav_fragment_github nav_fragment_github = new nav_fragment_github();
+    private nav_fragment_help nav_fragment_help = new nav_fragment_help();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -107,6 +109,10 @@ public class MainActivity extends AppCompatActivity {
                     }
                     case R.id.nav_developer: {
                         transaction.replace(R.id.nav_host_fragment, nav_fragment_developer).commitAllowingStateLoss();
+                        break;
+                    }
+                    case R.id.nav_help:{
+                        transaction.replace(R.id.nav_host_fragment, nav_fragment_help).commitAllowingStateLoss();
                         break;
                     }
                     case R.id.nav_github: {

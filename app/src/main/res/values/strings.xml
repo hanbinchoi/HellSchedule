@@ -11,6 +11,7 @@
     <string name="menu_manual">Manual</string>
     <string name="menu_policy">Policy</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_help">Help</string>
     <string name="menu_github">GitHub</string>
     <string name="menu_developer">Developer</string>
     <string name="menu_email">E-mail</string>
@@ -80,4 +81,19 @@ Web을 이용한 서비스를 포함하고 있습니다.</string>
     <string name="manual5_text">운동 세트 진행 후 휴식 시간 설정 기능이 있다.</string>
     <string name="manual6_text">운동 루틴 DB에 있는 루틴 검색으로 원하는 운동을 바로 검색 할 수 있다.</string>
     <string name="manual7_text">운동 용품 구매 사이트와 연동하여 자신이 구매하고자하는 운동 용품 및 보충제 등을 구매할 수 있다.</string>
+
+    <string name="help_title">개발에 도움을 준 사이트</string>
+    <string name="help1">1. 운동 루틴 관련</string>
+    <string name="help2">2. 참고 사이트</string>
+    <string name="help_text1">사람마다 운동하는 방법이 다르고 운동루틴이 정해진 사이트가
+없기 때문에 헬스케쥴은 최대한 신뢰할 수 데이터를 제공해주기 위해
+운동쪽에서 최정상의 자리에 있는 강경원 선수의 블로그와 유튜브에서
+주로 운동정보를 참고하였으며, 그 외 운지기, 키다리아저씨, 피지컬갤러리 등에서
+운동 방법 등을 참고하였습니다.</string>
+    <string name="help_text2">Data : https://www.youtube.com/channel/UCuwyPNJScQ5luAV7b8juFfg</string>
+    <string name="help_text3">Data : https://www.youtube.com/channel/UChWJavW1PbvAkPTcB06EeIg</string>
+    <string name="help_text4">Data : https://www.youtube.com/channel/UCQ4eZwsMew7ZaV_HKXnQLGg</string>
+    <string name="help_text5">Data : https://blog.naver.com/wc0116</string>
+    <string name="help_text6">Data : https://www.youtube.com/channel/UCdtRAcd3L_UpV4tMXCw63NQ</string>
+    <string name="help_text7">HealthKorea : https://www.healthkoreaus.com/mall/m_mall_list.php?ps_ctid=01000000</string>
 </resources>
