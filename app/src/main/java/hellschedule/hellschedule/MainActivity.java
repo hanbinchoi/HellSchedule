@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // 첫 화면 지정 replace를 통해 nav_host_fragment 에서 bottom_home_fragment에 해당화면 교체
+        // 첫 화면 지정 replace를 통해 nav_host_fragment 에서 bottom_home_fragment에 해당화면 교체2
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.nav_host_fragment, bottom_home_fragment).commitAllowingStateLoss();
 
