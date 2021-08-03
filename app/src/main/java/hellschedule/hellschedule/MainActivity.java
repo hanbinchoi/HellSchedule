@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        //BottomNav부분
+        //BottomNav부분d
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation_view);
         NavigationView LeftNavigationView = findViewById(R.id.nav_view);
 
