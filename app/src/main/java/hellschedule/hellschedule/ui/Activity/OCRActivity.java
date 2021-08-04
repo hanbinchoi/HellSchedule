@@ -40,7 +40,7 @@ public class OCRActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bmi_ocr);
 
-        //region 갤러리 이미지 객체 선언 및 갤러리에서 이미지 가져오는 이벤트 선언
+        //region 갤러리 이미지 객체 선언 및 갤러리에서 이미지 가져오는 이벤트 선언.
         Read_bmi_image = (ImageView) findViewById(R.id.read_bmi_image);
 
         Gallery_open_button = (Button) findViewById(R.id.gallery_open_button);
