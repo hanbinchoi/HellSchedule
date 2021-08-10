@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
 
-    // FrameLayout에 각 메뉴의 Fragment를 바꿔 줌.1
+    // FrameLayout에 각 메뉴의 Fragment를 바꿔 줌
     public FragmentManager fragmentManager = getSupportFragmentManager();
     // 4개의 메뉴에 들어갈 Fragment들을 가져와 변수로 선언,
     private Bottom_HomeFragment bottom_home_fragment = new Bottom_HomeFragment();
