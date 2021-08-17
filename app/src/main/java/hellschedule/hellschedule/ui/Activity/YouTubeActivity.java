@@ -33,7 +33,7 @@ public class YouTubeActivity extends YouTubeBaseActivity {
         listener = new YouTubePlayer.OnInitializedListener() {
             @Override
             public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean b) {
-                youTubePlayer.loadVideo(a);//자신이 원하는 유튜브 동영상
+                youTubePlayer.loadVideo(a);//자신이 원하는 유튜브 동영상1
             }
             @Override
             public void onInitializationFailure(YouTubePlayer.Provider provider, YouTubeInitializationResult youTubeInitializationResult) {
