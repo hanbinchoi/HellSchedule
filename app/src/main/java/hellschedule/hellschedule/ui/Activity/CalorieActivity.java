@@ -62,7 +62,7 @@ public class CalorieActivity extends AppCompatActivity {
         mwv = (WebView) findViewById(R.id.calorie_webView);
 
         WebSettings mws=mwv.getSettings();//Mobile Web Setting
-        mws.setJavaScriptEnabled(true);//자바스크립트 허용.1
+        mws.setJavaScriptEnabled(true);//자바스크립트 허용.11
         mws.setLoadWithOverviewMode(true);//컨텐츠가 웹뷰보다 클 경우 스크린 크기에 맞게 조정11
 
         mwv.setWebViewClient(new WebViewClient(){
