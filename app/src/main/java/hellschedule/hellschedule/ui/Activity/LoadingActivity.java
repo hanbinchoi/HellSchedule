@@ -20,7 +20,7 @@ public class LoadingActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_loading);
 
-        //region ImageView 형태의 splash GIF 변수를 만들고 Glide로 gif파일 불러오기.
+        //region ImageView 형태의 splash GIF 변수를 만들고 Glide로 gif파일 불러오기
         ImageView splashGif = (ImageView)findViewById(R.id.loading_gif);
         GlideDrawableImageViewTarget gifImage = new GlideDrawableImageViewTarget(splashGif);
         Glide.with(this).load(R.raw.loading_gif).into(splashGif);
