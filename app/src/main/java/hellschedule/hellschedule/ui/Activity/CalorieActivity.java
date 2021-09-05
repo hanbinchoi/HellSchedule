@@ -72,6 +72,6 @@ public class CalorieActivity extends AppCompatActivity {
                 return true;
             }
         });
-        mwv.loadUrl("https://www.dietshin.com/calorie/calorie_main.asp"); //헬스코리아 웹사이트 연동
+        mwv.loadUrl("https://www.dietshin.com/calorie/calorie_main.asp"); //헬스코리아 웹사이트 연동,
     }
 }
