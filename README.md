@@ -6,7 +6,7 @@
  
 Moon Seong-Hoon
 foxtail96@naver.com
-Gachon Univ.
+Gachon Univ
 
 Park Ki-Sung
 96sean@naver.com
